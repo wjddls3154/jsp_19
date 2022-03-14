@@ -1,4 +1,4 @@
-# jsp_19 : jquery 사용 3
+# jsp_19 : jquery 이용 3 (Atom에서만 됬음)
 
 ![image](https://user-images.githubusercontent.com/37132897/158186399-25391e5d-5eca-47ee-ab35-7a2cbf2e8090.png)
 - 버튼 누르기 전
