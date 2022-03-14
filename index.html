@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="one">hello world one</h1>
+    <h1 class="one two">hello world two</h1>
+    <h1 id="four" class="one two three">hello world three</h1>
+    <h1>hello world four</h1>
+    <h1>hello world five</h1>
+    <h1>hello world six</h1>
+    <p>hello world</p>
+    <button id="two" onclick="f()">눌러 !!</button>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $("#two").click(function f() {
+        $("h1:first")
+          .html("<mark>반갑습니다~!!!!</mark>")
+          .fadeOut(3000)
+          .fadeIn(3000)
+          .fadeOut(3000)
+          .fadeIn(3000); // jquery 사용 4
+        $("h1:last").text("<mark>반갑습니다~!!!!</mark>"); // jquery 사용 5
+      });
+
+      // 메소드 (속성 값 변경, DOM 탐색, css, 이벤트, 효과, etc)
+      // .text
+      // .html
+      // .val
+      // .hide
+      // .show
+      // .fadeout : 점차 사라지는 기능
+      // .fadein : 점차 나타나는 기능
+    </script>
+  </body>
+</html>
